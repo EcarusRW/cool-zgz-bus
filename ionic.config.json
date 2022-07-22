@@ -1,0 +1,7 @@
+{
+  "name": "zgz-cool-bus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
