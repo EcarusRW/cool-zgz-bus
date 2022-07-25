@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpBusService } from 'src/app/services/http-bus.service';
 
 @Component({
   selector: 'app-line-info',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LineInfoPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private httpBus: HttpBusService
+  ) { }
 
   ngOnInit() {
+  }
+
+  makeRequest(){
+    this.httpBus.getBusLine('32').subscribe((data)=>{
+      console.log(data);
+    });
   }
 
 }

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  url: 'https://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano'
 };
